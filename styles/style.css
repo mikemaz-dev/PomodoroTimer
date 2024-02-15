@@ -1,0 +1,115 @@
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+	/* background: #5c0dac; */
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('https://img.stablecog.com/insecure/1536w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vZTNkMmM3YjEtY2NmNy00YmFjLThjMGMtNzY0NjM3YjQ5Mzc4LmpwZWc.webp');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	max-width: 1198px;
+	margin: 0 auto;
+}
+
+.timer {
+	display: flex;
+}
+
+.timer__title {
+	font-size: 30px;
+	font-weight: 600;
+	color: #ffffff;
+	margin-top: 30px;
+}
+
+.timer__controls {
+	display: flex;
+	gap: 3rem;
+	flex-direction: row;
+	padding: 50px 0;
+}
+
+.timer__controls form {
+	max-height: 100px;
+	display: flex;
+}
+
+.timer__controls input {
+	flex: 1;
+	padding: 6px;
+	font-size: 18px;
+	border-width: 1px;
+	border-color: #cccccc;
+	background-color: #ffffff;
+	color: #000000;
+	border-style: solid;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+	text-shadow: 0px 0px 0px rgba(66, 66, 66, 0.52);
+}
+
+.timer__controls input:focus {
+	outline: none;
+}
+
+.timer__button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	color: white;
+	font-size: 2rem;
+	text-transform: uppercase;
+	background: rgba(140, 189, 175, 0.5);
+	-webkit-backdrop-filter: blur(26px);
+	backdrop-filter: blur(26px);
+	border: 1px solid rgba(140, 189, 175, 0.25);
+	border-radius: 10px;
+	backdrop-filter: blur(26px);
+	padding: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	transition: all 0.2s;
+}
+
+.timer__button:hover {
+	background: linear-gradient(45deg, rgb(219, 24, 24), rgb(24, 56, 221));
+	outline: none;
+	/* border: none; */
+}
+
+.timer__button:focus {
+	background-color: rgb(24, 56, 221);
+}
+
+.timer_display {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.timer_display-left {
+	font-weight: 400;
+	font-size: 20rem;
+	margin: 0;
+	color: white;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.timer_display-end {
+	font-size: 4rem;
+	color: white;
+}

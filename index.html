@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PomodoroTimer</title>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+	</head>
+	<body>
+		<div class="timer">
+			<div class="container">
+				<h1 class="timer__title">Pomodoro Timer</h1>
+				<div class="timer__controls">
+					<form name="timerForm">
+						<input
+							type="text"
+							name="minutes"
+							placeholder="Number of minutes..."
+						/>
+					</form>
+					<button data-time="30" class="timer__button">30 секунд</button>
+					<button data-time="300" class="timer__button">5 минут</button>
+					<button data-time="900" class="timer__button">15 минут</button>
+					<button data-time="1200" class="timer__button">Break</button>
+				</div>
+				<div class="timer_display">
+					<div class="timer_display-left"></div>
+					<p class="timer_display-end"></p>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
